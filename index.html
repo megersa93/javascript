@@ -3,140 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Megersa Photo Studio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap/bootstrap-5.3.7-dist/css/bootstrap.min.css">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #555;
+        }
+    </style>
 </head>
 <body>
 
-   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="photo\M1.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
+<header>
+    <h1>My Portfolio</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-    <div class="carousel-item">
-      <img src="photo\M2.jpg" class="d-block w-100" alt="...">
+<section id="about">
+    <h2>About Me</h2>
+   <img src="photo\short.jpg" alt="About Me" style="max-width: 100%; height: auto;">
+    <p>Hello! I'm a passionate developer with experience in web technologies.</p>
+</section>
 
-       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
+<section id="projects">
+    <h2>Projects</h2>
+    <p>Here are some of my projects:</p>
+    <ul>
+        <li>Project 1 - A web application</li>
+        <li>Project 2 - A mobile app</li>
+        <li>Project 3 - A game</li>
+    </ul>
+</section>
 
-    <div class="carousel-item">
-      <img src="photo\short.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Merga studio</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="gallery.html">gallery</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="contact.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            contact us
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+<footer>
+    <p>© 2025 My Portfolio</p>
+</footer>
 
-   
-    <h1 id="welcome"><center><b></b>Welcome to Merga photo studio </b><br> 
-    baga gara margaa footo studiyoo nagaan dhuftan</h1></center>
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Thank you for your message!');
+        this.reset();
+    });
+</script>
 
-   
-    
-    <h3 style="text-align: center;"><b>these are the table</b></h3>
-    <center><table border="1px" class="mytable">
-        <tr style="color: rgb(100, 0, 0);">
-            <td>working day</td>
-            <td>from</td>
-            <td>end</td>
-        </tr>
-
-        <tr>
-            <td>working day</td>
-            <td>tuesday</td>
-            <td>4</td>
-        </tr>
-
-        <tr>
-            <td>working day</td>
-            <td>wedsaday</td>
-            <td>7</td>
-        </tr>
-        <tr>
-            <td>working day</td>
-            <td>fridy</td>
-            <td>7</td>
-        </tr>
-    </table>
-    </center><br>
-
-    <h3><b>these are the buttons</b></h3>
-
-    <button style="text-align: centerS;" onclick="alert">click me</button>
-    <button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button><br>
-
-<h3 style="color: brown;">the below code have been taken from <b>bootstrap</b></h3>
-<button type="button" class="btn btn-link">Link</button><br>
-
- <div>
-    <a href="index.html" id="active">Home</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a><br>
-</div>
-
-<h3><b>these are the cards</b></h3>
-<div class="card" style="width: 18rem;">
-  <img src="photo\short.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
-
-   <script src="bootstrap/bootstrap-5.3.7-dist//js/bootstrap.bundle.js"></script>
+</body>
 </html>
