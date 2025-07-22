@@ -1,4 +1,4 @@
-THIS ARE FIVE DIFFERENCE PROJECTS THOSE I WAS DONE IN JULY 2025 :-
+THIS ARE FIVE DIFFERENT PROJECTS THOSE I WAS DONE IN JULY 2025 :-
     -my portifolio
     -snake game
     -guessing number game
