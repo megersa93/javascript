@@ -1,0 +1,19 @@
+{
+  "name": "my-ecommerce-app",
+  "version": "1.0.0",
+  "description": "A simple E-commerce project with Node.js and Express.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "ecommerce",
+    "nodejs",
+    "express"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
