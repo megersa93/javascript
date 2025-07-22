@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+
+
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classic Snake Game</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="snake.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Snake Game</h1>
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+      <div class="score-display">Score: <span id="score">0</span></div>
+      <div class="game-over-message" id="gameOverMessage">
+        Game Over! Press Start to Play Again.
+      </div>
+      <button id="startButton">Start Game</button>
+    </div>
+  </body>
+  <script src="snake.js"></script>
+</html>

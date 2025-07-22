@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task Manager</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="task.css"> <!-- Link to external CSS -->
+
+</head>
+<body>
+    <div class="container">
+        <h1>My Task Manager</h1>
+
+        <form id="task-form" class="task-form">
+            <input type="text" id="task-input" placeholder="Add a new task..." required>
+            <button type="submit" class="button add-button">
+                <i class="fas fa-plus"></i> Add Task
+            </button>
+        </form>
+
+        <div class="filters">
+            <button class="button filter-button active" data-filter="all">All</button>
+            <button class="button filter-button" data-filter="active">Active</button>
+            <button class="button filter-button" data-filter="completed">Completed</button>
+            <button class="button clear-completed-button"><i class="fas fa-eraser"></i> Clear Completed</button>
+        </div>
+
+        <ul id="task-list" class="task-list">
+            <!-- Tasks will be loaded and rendered here by JavaScript -->
+            <p class="empty-message">No tasks yet. Add one above!</p>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Task Manager. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+<script src="task.js"></script> <!-- Link to external JavaScript -->
+</html>
